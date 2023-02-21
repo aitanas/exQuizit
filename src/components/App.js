@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FlashCard from "./flashcard/Card";
 import Collection from "./flashcard/Collection";
+import SignIn from "./SignIn";
 
 export default function App() {
   return (
@@ -23,6 +24,11 @@ export default function App() {
         <Route path="/FlashCard">
           <Route index element={<FlashCard />}></Route>
           <Route path=":flashcardId" element={<FlashCard />} />
+        </Route>
+
+        <Route path="/SignIn">
+          <Route index element={<SignIn />}></Route>
+          <Route path="SignIn" element={<SignIn />} />
         </Route>
       </Routes>
       <Footer />
