@@ -1,10 +1,14 @@
 import React from 'react';
 import Card from "./Card";
+import { collection, addDoc, onSnapshot, doc, updateDoc } from "firebase/firestore";
 
-export default function Collection() {
-  // useState = [currentCardIndex, setCurrentCard] this is index of card in array 
-  // <- -> buttons
+export default function Collection() { // 
+
   return (
-    <div> [ <card></card>, <card></card>, <card></card>, <card></card>, <card></card>, <card></card>, ] </div>
+    <div>
+      <ul>
+        
+      </ul>        {/* display: collection title, collection cards */}
+    </div>
   )
 }

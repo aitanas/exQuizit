@@ -1,10 +1,15 @@
 import React from "react";
+import db from './../firebase.js';
 
 export default function Card() {
-
+  
   return (
     <React.Fragment>
-      <strong>SINGLE FLASH CARD</strong>
+      <article>
+      
+      <strong>QUESTION</strong>
+      <strong>ANSWER</strong>
+      </article>
     </React.Fragment>
   )
 }

@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
-import Control from './flashcard/Control';
+import List from './flashcard/List';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FlashCard from './flashcard/Card';
@@ -17,8 +17,8 @@ export default function App() {
           <Route index element={<Home/>}></Route>
         </Route>
 
-        <Route path='/Control'>
-          <Route index element={<Control/>}></Route>
+        <Route path='/List'>
+          <Route index element={<List/>}></Route>
           <Route path=':flashcardId' element={<FlashCard/>} />
         </Route>
 
