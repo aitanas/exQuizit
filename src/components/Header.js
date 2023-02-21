@@ -8,7 +8,7 @@ export default function Header() {
       <h1> exQuizit</h1>
       <nav>
           <Link to="/">Home</Link>
-          <Link to="/List">Flash Cards</Link>
+          <Link to="/Collection">Collection</Link>
       </nav>
     </React.Fragment>
   );

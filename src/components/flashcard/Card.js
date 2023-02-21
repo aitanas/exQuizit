@@ -1,5 +1,4 @@
 import React from "react";
-import db from './../firebase.js';
 
 export default function Card() {
   

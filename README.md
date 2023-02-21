@@ -1,11 +1,14 @@
-# title goes here
+# exQuizit!
 
 #### By Aitana Shough, Brian Noh, Dominik Magic, Richard Cha
+
+A React web application that utilizes flash cards and quizzes to help the user with studying Software Engineering terms and concepts.
 
 
 ## Technologies Used
 
 * React
+* Firebase
 * JavaScript
 * HTML
 * CSS
@@ -14,25 +17,22 @@
 
 ## Description
 
-__Prompt__
-
-
+A React web application that utilizes flash cards and quizzes to help the user with studying Software Engineering terms and concepts.
 
 ### Objectives (MVP)
-__User Stories:__
-* 
-✅
+
+* **Flash Cards:** User should be presented a flash card with a question. The flash card may be "flipped" on click to display the answer.
+* **Database:** NoSQL database created with Firebase and populated with study questions and answers
+* **Tags:** Questions should be sorted into categories, with a `tags` key displaying one of the following categories:
+  * `cs` : for logic, data structure, and theory based questions
+  * `javascript` : JavaScript specific questions
+  * `csharp` : C# specific questions
 
 ### Further Exploration (Stretch Goals)
 
-__Further Exploration__
-* 
-
-## Process 
-1.
-
-### Goals
-1. Meet MVP
+* **Quizzes:** Implement quizzes with the existing Firebase dataset
+* **Authentication and Authorization:** Users can create and log in to a personal account
+* **Typed Answers**: Users may type in the answer to a question instead of flipping a flash card
 
 
 ## Setup/Installation Requirements
