@@ -54,13 +54,26 @@ export default function Collection() {
   if (auth.currentUser !== null) {
       if (!isLoading) {
         return (
-          <div>
-          <button onClick={() => handlePrev()}>Prev</button>
-          <div onClick={flip}>{question && cards[currentCard].question}</div>
-          <div onClick={flip}>{!question && cards[currentCard].answer}</div>
-          <button onClick={() => handleNext()}>Next</button>
-        </div>
-      );
+          <div class="container m-6 p-0 relative bg-zinc-200 px-6 text-zinc-900 pt-10 pb-8 shadow-xl ring-3 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10 sm:w-1/2 w-96 mx-auto h-[28rem] flex flex-col justify-between">
+            <hr />
+            <div className="text-2xl" onClick={flip}>
+              {question && cards[currentCard].question}
+            </div>
+            <div className="text-2xl" onClick={flip}>
+              {!question && cards[currentCard].answer}
+            </div>
+            <hr />
+            <div className="text-center place-content-center bg-zinc-300 p-4 rounded-lg flex ">
+              <button onClick={() => handlePrev()}>
+                <i class="bi bi-arrow-left-circle-fill text-5xl text-amber-900 hover:text-amber-600"></i>
+              </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button onClick={() => handleNext()}>
+                <i class="bi bi-arrow-right-circle-fill text-5xl text-amber-900 hover:text-amber-600"></i>
+              </button>
+            </div>
+          </div>
+        );
     } else {
       return (
         <section>
@@ -77,8 +90,8 @@ export default function Collection() {
     }
 } else {
   return (
-    <div>
-      <h1>401</h1>
+    <div className="text-left flex flex-col items-center">
+      <h1 className="text-3xl">401</h1>
       user not authorized. please sign in
     <div>
       <Link to='/signin'>sign in</Link>

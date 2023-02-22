@@ -9,6 +9,7 @@ import SignIn from "./SignIn";
 
 export default function App() {
   return (
+      <div className="flex flex-col mx-auto container min-h-screen relative">
     <Router>
       <Header />
       <Routes>
@@ -33,5 +34,6 @@ export default function App() {
       </Routes>
       <Footer />
     </Router>
+    </div>
   );
 }

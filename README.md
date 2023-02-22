@@ -10,6 +10,7 @@ A React web application that utilizes flash cards and quizzes to help the user w
 * React
 * Firebase
 * JavaScript
+* Tailwind CSS
 * HTML
 * CSS
 * webpack
